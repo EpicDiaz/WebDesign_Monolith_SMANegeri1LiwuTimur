@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WarungTetangga | Pasar Digital untuk UMKM Lokal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-store"></i>
+                <span>WarungTetangga</span>
+            </a>
+            <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features" class="active">Fitur</a></li>
+                <li><a href="#products">Produk Lokal</a></li>
+                <li><a href="#how-it-works">Cara Kerja</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Masuk</a>
+                <a href="#" class="btn btn-primary">Daftar UMKM</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Pasarkan Produk Lokal, Tingkatkan Ekonomi Desa</h1>
+            <p>Platform digital yang menghubungkan UMKM lokal dengan pembeli di sekitar Anda. Mudah digunakan, tanpa biaya berlangganan, dan mendukung penuh perekonomian komunitas.</p>
+            <a href="#products" class="btn btn-primary">Mulai Jualan Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fitur Unggulan</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mudah Digunakan</h3>
+                    <p>Antarmuka sederhana yang bisa diakses bahkan oleh pengguna smartphone pemula. Cukup foto produk dan tulis deskripsi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Lokasi Terdekat</h3>
+                    <p>Tampilkan produk UMKM dalam radius 5 km dari lokasi pembeli untuk memudahkan transaksi langsung dan mengurangi biaya logistik.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Bayar di Tempat</h3>
+                    <p>Sistem pembayaran cash on delivery (COD) yang aman dan nyaman bagi pembeli maupun penjual lokal.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Pantau Penjualan</h3>
+                    <p>Laporan penjualan harian/mingguan yang membantu pelaku UMKM memahami pola pembelian dan mengoptimalkan stok.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Pelatihan Gratis</h3>
+                    <p>Kelas online gratis tentang digital marketing, pengemasan produk, dan manajemen keuangan untuk penjual.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Kurir Komunitas</h3>
+                    <p>Jaringan kurir lokal yang membantu pengiriman produk dengan biaya terjangkau untuk transaksi jarak jauh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products-section" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Produk Lokal Pilihan</h2>
+            </div>
+
+            <div class="products-header">
+                <div class="category-tabs" role="tablist" aria-label="Kategori produk">
+                    <button class="category-tab active" data-cat="all">Semua</button>
+                    <button class="category-tab" data-cat="makanan">Makanan</button>
+                    <button class="category-tab" data-cat="kerajinan">Kerajinan</button>
+                    <button class="category-tab" data-cat="pakaian">Pakaian</button>
+                </div>
+                <div>
+                    <input type="text" id="searchInput" placeholder="Cari produk..." aria-label="Cari produk" />
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Example product cards -->
+                <div class="product-card" data-cat="makanan">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1604908177522-833f8ad3c6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Kerupuk Ikan">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kerupuk Ikan Tradisional</div>
+                        <div class="product-owner">Bu Siti - Desa Melati</div>
+                        <div class="product-price">Rp25.000</div>
+                        <div class="product-rating"><span class="stars">★★★★☆</span> (24)</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-cat="kerajinan">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228456-5f3d1f7f8f4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Tas Anyaman">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Tas Anyaman Pandan</div>
+                        <div class="product-owner">Pak Jaya - RT 02</div>
+                        <div class="product-price">Rp75.000</div>
+                        <div class="product-rating"><span class="stars">★★★★★</span> (89)</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-cat="pakaian">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Batik">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kemeja Batik Cap</div>
+                        <div class="product-owner">UMKM Batik Makassar</div>
+                        <div class="product-price">Rp120.000</div>
+                        <div class="product-rating"><span class="stars">★★★★☆</span> (41)</div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-cat="makanan">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617191514582-5c7d8d7b3f87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Kue Tradisional">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Kue Tradisional Kering</div>
+                        <div class="product-owner">Ibu Nina - Pekan</div>
+                        <div class="product-price">Rp35.000</div>
+                        <div class="product-rating"><span class="stars">★★★★☆</span> (12)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works section" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cara Kerja</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Daftar & Buat Toko</h3>
+                    <p>Penjual mendaftar, mengunggah foto produk, dan mengisi informasi harga serta stok.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Produk Terdaftar</h3>
+                    <p>Produk akan muncul di daftar berdasarkan kategori dan lokasi penjual.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Pembeli Memesan</h3>
+                    <p>Pembeli memesan produk dan memilih metode pengambilan atau COD.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Pengiriman Lokal</h3>
+                    <p>Kurir komunitas atau penjual mengantarkan pesanan, dan transaksi selesai.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimoni</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <p>"Sejak bergabung ke WarungTetangga, omzet toko saya naik 40%!"</p>
+                    <p style="margin-top:12px;font-weight:700;">— Bu Siti</p>
+                </div>
+                <div class="feature-card">
+                    <p>"Pengiriman cepat dan biaya terjangkau, cocok untuk usaha kecil kami."</p>
+                    <p style="margin-top:12px;font-weight:700;">— Pak Jaya</p>
+                </div>
+                <div class="feature-card">
+                    <p>"Pelatihannya membantu saya mengemas produk dengan lebih menarik."</p>
+                    <p style="margin-top:12px;font-weight:700;">— Ibu Nina</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content container">
+            <h2>Bergabunglah dengan Komunitas Penjual Lokal</h2>
+            <p>Daftarkan usaha Anda sekarang dan dapatkan akses pelatihan serta jaringan pembeli di sekitar.</p>
+            <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Tentang WarungTetangga</h3>
+                    <p>WarungTetangga adalah pasar digital yang mendukung UMKM lokal untuk menjual produk ke masyarakat sekitar.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Menu</h3>
+                    <ul class="footer-links">
+                        <li><a href="#features">Fitur</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#how-it-works">Cara Kerja</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i><span style="margin-left:8px;">Jl. Contoh No.12, Kota</span></li>
+                        <li><i class="fas fa-phone"></i><span style="margin-left:8px;">0812-3456-7890</span></li>
+                        <li><i class="fas fa-envelope"></i><span style="margin-left:8px;">halo@warungtetangga.id</span></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2025 WarungTetangga. Semua hak dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab" id="fab" title="Kembali ke atas" role="button" aria-label="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
